@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 12.6rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.75px;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1.6rem 3.2rem;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #c91b28;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #000;
+  color: #c91b28;
+  border: 1px solid #c91b28;
+}
+
+.btn--arrow,
+.btn--arrow:link,
+.btn--arrow:visited {
+  color: #c91b28;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  /* margin-top: 3rem; */
+}
+
+.link,
+.link:link,
+.link:visited {
+  font-size: 1.2rem;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 2px;
+  margin-left: 4rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #c91b28;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+}
+
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}
