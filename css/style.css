@@ -1,10 +1,7 @@
 body {
-  background-color: #000;
+  background-color: #111111;
 }
 
-.overlay {
-  background-color: gray;
-}
 /**************************/
 /* HEADER */
 /**************************/
@@ -73,7 +70,7 @@ body {
 }
 .card ion-icon {
   font-size: 60px;
-  fill: green;
+  color: #c91b28;
   margin-bottom: 2rem;
 }
 
