@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Design Landing Page</title>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css">
+   
 
     <script
       type="module"
@@ -22,12 +24,16 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./script.js"></script>
+
+    <title>Product Design Landing Page</title>
   </head>
   <body>
     <header class="nav-header">
       <a href="#">
         <img class="logo" alt="brand logo" src="./img/white-logo.png" />
       </a>
+
       <nav class="main-nav">
         <ul class="list">
           <li><a href="#" class="link">home</a></li>
@@ -37,9 +43,15 @@
           <li><a href="#" class="link">Other Page</a></li>
         </ul>
       </nav>
+
+      <!-- header for mobile navigation  -->
+      <button  class="btn-mobile-nav"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon></button>
+      
     </header>
 
     <main>
+      <!-- intro section  -->
       <section class="section-intro">
         <div class="container grid grid--2-cols grid--center-v">
           <div class="intro-img">
@@ -57,6 +69,7 @@
           </div>
         </div>
       </section>
+      <!-- experience section  -->
       <section class="section-experience">
         <div class="overlay"></div>
         <div class="container experience-text grid grid--3-cols">
@@ -117,7 +130,7 @@
           </div>
         </div>
       </section>
-
+<!-- projects section  -->
       <section class="section-projects">
         <div class="container projects-header">
             <div class="project-header-left">
@@ -176,12 +189,14 @@
         </div>
         
       </section>
-      <section class=" container section-upcoming">
-        <div class="upcoming-container">
+
+      <!-- upcoming section  -->
+      <section class="  section-upcoming">
+        <div class="container upcoming-container">
             <div class="section-upcoming-left">
-                <h2 class="heading-secondary">
+                <h3 class="heading-secondary">
                   Let's Work Together on Your Next Project
-                </h2>
+                </h3>
                 <p class="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Consequuntur corrupti doloremque ipsa eligendi enim.
@@ -193,14 +208,14 @@
 
       <footer class="footer">
         <div class="container footer-top">
-          <ul class="list center-text">
+          <ul class="list footer-list">
             <li><a href="#" class="link">Home</a></li>
             <li><a href="#" class="link">About</a></li>
             <li><a href="#" class="link">Products</a></li>
             <li><a href="#" class="link">Contact</a></li>
           </ul>
         </div>
-        <div class=" footer-bottom grid grid--2-cols grid--center-v">
+        <div class=" footer-bottom">
             <a href="#">
                 <img class="logo" alt="brand logo" src="./img/white-logo.png" />
               </a>
