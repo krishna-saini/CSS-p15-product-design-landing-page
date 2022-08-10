@@ -1,20 +1,22 @@
+### [Live Link](https://product-design-landing-page-by-krishna-saini.netlify.app/)
+<img src="15.png">
+
 ## Tech Stack Used
 - CSS3
 - HTML5
-- Responsive 
+- Fully Responsive 
 
 ## Approx. Time taken to complete
-2.5 hours
+4.5 hours
 
 
 ### My learnings from Project
 - Flexbox
 - CSS grids
-- Mobile Responsive
+- Mobile Responsiveness techniques
 - Positioning
 
-### [Live Link](https://product-design-landing-page-by-krishna-saini.netlify.app/)
-<img src="15.png">
+
 ***
 
 
